@@ -1,0 +1,26 @@
+// Chef and stock prices
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin >> t;
+	while(t--)
+	{
+	    double price, range1, range2, c;
+	    cin >> price >> range1 >> range2 >> c;
+	    
+	    double livePrice = price + ((price * c) / 100);
+	    
+	    if(livePrice >= range1 and livePrice <= range2)
+	    {
+	        cout << "Yes" << endl;
+	    }
+	    else{
+	        cout << "No" << endl;
+	    }
+	}
+	return 0;
+}
