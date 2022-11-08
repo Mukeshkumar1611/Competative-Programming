@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin >> t;
+	while(t--)
+	{
+	    int n , k;
+	    cin >> n >> k;
+	    
+	    int *arr = new int[n];
+	    for(int i=0;i<n;i++)
+	    {
+	        cin >> arr[i];
+	    }
+	    
+	    int init = k;
+	    string str = "";
+	    for(int i=0;i<n;i++)
+	    {
+	        if(init - arr[i] >= 0)
+	        {
+	            str += "1";
+	            init = init - arr[i];
+	        }
+	        else{
+	            str+="0";
+	        }
+	    }
+	    cout << str << endl;
+	}
+	return 0;
+}
