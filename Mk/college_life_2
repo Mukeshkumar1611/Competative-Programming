@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        long long int seasons;
+        cin >> seasons;
+        long long int intro[seasons];
+        for (int i = 0; i < seasons; i++)
+        {
+            cin >> intro[i];
+        }
+        long long int mk = 0;
+        long long int total = 0;
+        while (seasons--)
+        {
+            long long int episodes;
+            cin >> episodes;
+
+            long long int duration[episodes];
+            long long int sumDur = 0;
+            for (int i = 0; i < episodes; i++)
+            {
+                cin >> duration[i];
+                sumDur += duration[i];
+            }
+            long long int temp = intro[mk] * episodes;
+            total = total + sumDur + intro[mk] - temp;
+            mk++;
+        }
+        cout << total << endl;
+
+    }
+    return 0;
+}
+
