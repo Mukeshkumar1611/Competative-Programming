@@ -1,0 +1,63 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int d, c;
+        cin >> d >> c;
+
+        int a1, b1, c1;
+        cin >> a1 >> b1 >> c1;
+
+        int a2, b2, c2;
+        cin >> a2 >> b2 >> c2;
+
+        int firstDay = a1 + b1 + c1;
+        int secondDay = a2 + b2 + c2;
+
+        if (firstDay >= 150 and secondDay >= 150)
+        {
+            if (firstDay + secondDay + c < firstDay + secondDay + d + d)
+            {
+                cout << "YES" << endl;
+            }
+            else
+            {
+                cout << "NO" << endl;
+            }
+        }
+        
+        else if(firstDay >= 150 and secondDay < 150)
+        {
+            if (firstDay + c + secondDay + d < firstDay + secondDay + d + d )
+            {
+                cout << "YES" << endl;
+            }
+            else
+            {
+                cout << "NO" << endl;
+            }
+        }
+        else if(secondDay >= 150 and firstDay < 150)
+        {
+            if (firstDay + c + secondDay + d < firstDay + secondDay + d + d )
+            {
+                cout << "YES" << endl;
+            }
+            else
+            {
+                cout << "NO" << endl;
+            }
+        }
+        else{
+             cout << "NO" << endl;
+        }
+    }
+
+    return 0;
+}
