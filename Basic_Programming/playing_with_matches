@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int arr[10] = {6,2,5,5,4,5,6,3,7,6};
+	
+	int t;
+	cin >> t;
+	
+	while(t--)
+	{
+	    int a, b;
+	    cin >> a >> b;
+	    int c = a +  b;
+	    int ans = 0;
+	    
+	    while(c != 0)
+	    {
+	        int r = c % 10;
+	        ans = ans + arr[r];
+	        c = c / 10;
+	    }
+	    
+	    cout << ans << endl;
+	}
+	return 0;
+}
