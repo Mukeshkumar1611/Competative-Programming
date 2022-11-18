@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+bool isPrime(int n)
+{
+    // Corner case
+    if (n <= 1)
+        return false;
+ 
+    // Check from 2 to n-1
+    for (int i = 2; i < n; i++)
+        if (n % i == 0)
+            return false;
+ 
+    return true;
+}
+
+int main() {
+	// your code goes here
+	int t;
+	cin >> t;
+	while(t--)
+	
+	{
+	    int a,b;
+	    cin >> a >> b;
+	    int c = a+b;
+	    if(isPrime(c))
+	    {
+	        cout << "Alice" << endl;
+	    }
+	    else{
+	        cout << "Bob" << endl;
+	    }
+	}
+	return 0;
+}
