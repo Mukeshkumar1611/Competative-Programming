@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin >> t;
+	while(t--)
+	{
+	    int a,b,c;
+	    cin >> a >>b >> c;
+	    int maxi = max(a, max(b,c));
+	    int mini = min(a, min(b,c));
+	    if(a != maxi and a != mini)
+	    {
+	        cout << a << endl;
+	        
+	    }
+	    else if(b != maxi and b != mini)
+	    {
+	        cout << b << endl;
+	        
+	    }
+	    else{
+	        cout << c << endl;
+	    }
+	}
+	return 0;
+}
