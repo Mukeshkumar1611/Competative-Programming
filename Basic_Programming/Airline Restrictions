@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin >> t;
+	
+	while(t--)
+	{
+	    int a,b,c,d,e;
+	    cin >> a >> b >> c >> d >> e;
+	    
+	    if((a + b <= d and c <= e) or (b + c <= d and a <= e) or (c+a <= d and b <= e))
+	    {
+	        cout << "YES" << endl;
+	    }
+	    else{
+	        cout << "NO" << endl;
+	   }
+	}
+	return 0;
+}
