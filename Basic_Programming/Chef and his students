@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin >> t;
+	while(t--)
+	{
+	    int count = 0;
+	    string ab;
+	    cin >> ab;
+	    for(int i=1;i<ab.size();i++)
+	    {
+	        if(ab[i] == '>' and ab[i-1] == '<')
+	        {
+	            count++;
+	        }
+	    }
+	    cout << count << endl;
+	}
+	
+	return 0;
+}
