@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int n;
+        cin >> n;
+        string ab;
+        cin >> ab;
+
+        ab = '0' + ab;
+        ab = ab + '1';
+
+        int count = 0;
+
+        for (int i = 1; i < n + 1; i++)
+        {
+            if (ab[i - 1] == '0' and ab[i] == '1')
+            {
+                count++;
+            }
+        }
+        cout << count << endl;
+    }
+    return 0;
+}
