@@ -19,7 +19,6 @@ int main() {
 	    else if(b != maxi and b != mini)
 	    {
 	        cout << b << endl;
-	        
 	    }
 	    else{
 	        cout << c << endl;
