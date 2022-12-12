@@ -7,7 +7,7 @@ int main() {
 	cin >> t;
 	while(t--)
 	{
-	    int a, b;
+	    int a , b;
 	    cin >> a >> b;
 	    cout << min(a,b) << endl;
 	}
