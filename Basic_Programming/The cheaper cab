@@ -19,8 +19,8 @@ int main() {
 	        cout << "SECOND" << endl;
 	    }
 	    else{
-	        cout << "ANY" << endl;}
-	    
+	        cout << "ANY" << endl;
+	    }    
 	}
 	return 0;
 }
