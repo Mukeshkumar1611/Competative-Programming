@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin >> t;
+	while(t--)
+	{
+	    int a, b, c;
+	    cin >> a >> b >> c;
+	    int m = max(a,b);
+	    int n = min(a, b);
+	    
+	    if((m-n) % c == 0)
+	    {
+	        cout << (m-n)/ c<< endl;
+	    }
+	    else{
+	        cout << (m - n)/c + 1 << endl;
+	    }
+	}
+	return 0;
+}
