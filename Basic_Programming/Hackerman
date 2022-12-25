@@ -29,7 +29,8 @@ int main() {
 	    {
 	        cout << "Alice" << endl;
 	    }
-	    else{
+	    else
+	    {
 	        cout << "Bob" << endl;
 	    }
 	}
