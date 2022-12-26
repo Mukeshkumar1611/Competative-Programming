@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int n;
+        cin >> n;
+        int k;
+        cin >> k;
+        int v;
+        cin >> v;
+        int arr[n];
+
+        for (int i = 0; i < n; i++)
+        {
+            cin >> arr[i];
+        }
+
+        int sum = 0;
+
+        for (int i = 0; i < n; i++)
+        {
+            sum += arr[i];
+        }
+
+        int sans = (v * (n+k)) - sum;
+        if(sans > 0 and sans%k == 0)
+        {
+            cout << sans/k << endl;
+        }
+        else{
+            cout << -1 << endl;
+        }
+    }
+    return 0;
+}
