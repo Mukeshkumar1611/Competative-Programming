@@ -25,7 +25,8 @@ int main() {
 	            str += "1";
 	            init = init - arr[i];
 	        }
-	        else{
+	        else
+		{
 	            str+="0";
 	        }
 	    }
