@@ -32,7 +32,6 @@ int main()
                 curr = curr - 2;
             }
         }
-
         cout << ans << endl;
     }
     return 0;
