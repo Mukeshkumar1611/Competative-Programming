@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int n;
+        cin >> n;
+        int arr[n];
+        for (int i = 0; i < n; i++)
+        {
+            cin >> arr[i];
+        }
+        int k = 0;
+        for (int i = 0; i < n; i++)
+        {
+            if (arr[i] == 1 or arr[i] == 2 or arr[i] == 3 or arr[i] == 4 or arr[i] == 5 or arr[i] == 6 or arr[i] == 7)
+            {
+                k = i + 1;
+            }
+        }
+        cout << k << endl;
+    }
+    return 0;
+}
