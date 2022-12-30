@@ -13,7 +13,8 @@ int main() {
 	    {
 	        cout << a * 3 << endl;
 	    }
-	    else{
+	    else
+	    {
 	        cout << b * 2 << endl;
 	    }
 	}
