@@ -16,7 +16,8 @@ int main() {
 	    {
 	        cout << (m-n)/ c<< endl;
 	    }
-	    else{
+	    else
+	    {
 	        cout << (m - n)/c + 1 << endl;
 	    }
 	}
