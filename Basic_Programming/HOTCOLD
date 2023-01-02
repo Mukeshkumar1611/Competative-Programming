@@ -13,7 +13,8 @@ int main() {
 	    {
 	        cout << "COLD" << endl;
 	    }
-	    else{
+	    else
+	    {
 	        cout << "HOT" << endl;
 	    }
 	}
