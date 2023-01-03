@@ -21,7 +21,8 @@ int main() {
 	    {
 	        cout << 2 << endl;
 	    }
-	    else{
+	    else
+	    {
 	        cout << 0 << endl;
 	    }
 	}
