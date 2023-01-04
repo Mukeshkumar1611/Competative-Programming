@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+
+string leftShift(string s)
+{
+    char temp = s[0];
+    for (int i = 1; i < s.size(); i++)
+    {
+        s[i - 1] = s[i];
+    }
+    s[s.size() - 1] = temp;
+    return s;
+}
+
+string rightShift(string s)
+{
+    char temp = s[s.size() - 1];
+    for (int i = s.size() - 1; i > 0; i--)
+    {
+        s[i] = s[i - 1];
+    }
+    s[0] = temp;
+    return s;
+}
+
+int main()
+{
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        string s;
+        cin >> s;
+
+        string left = leftShift(s);
+        string right = rightShift(s);
+
+        if (left == right)
+        {
+            cout << "YES" << endl;
+        }
+        else
+        {
+            cout << "NO" << endl;
+        }
+    }
+    return 0;
+}
