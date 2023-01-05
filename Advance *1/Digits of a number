@@ -1,0 +1,38 @@
+// Chef and digits of a number
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int ones = 0;
+        int zeroes = 0;
+        string ab;
+        cin >> ab;
+        for (int i = 0; i < ab.size(); i++)
+        {
+            if (ab[i] == '1')
+            {
+                ones++;
+            }
+            else
+            {
+                zeroes++;
+            }
+        }
+        if (ones == 1 or zeroes == 1)
+        {
+            cout << "Yes" << endl;
+        }
+        else
+        {
+            cout << "No" << endl;
+        }
+    }
+    return 0;
+}
