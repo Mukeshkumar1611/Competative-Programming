@@ -1,0 +1,29 @@
+// Two different palindromes
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // your code goes here
+    long long int t;
+    cin >> t;
+    while (t--)
+    {
+        long long int a, b;
+        cin >> a >> b;
+        if (a == 1 or b == 1)
+        {
+            cout << "No" << endl;
+        }
+        else if (a % 2 == 1 and b % 2 == 1)
+        {
+            cout << "No" << endl;
+        }
+        else
+        {
+            cout << "Yes" << endl;
+        }
+    }
+    return 0;
+}
