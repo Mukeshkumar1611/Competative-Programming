@@ -1,0 +1,50 @@
+// Chef and Coupon
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int d, c;
+        cin >> d >> c;
+
+        int a1, a2, a3;
+        cin >> a1 >> a2 >> a3;
+
+        int b1, b2, b3;
+        cin >> b1 >> b2 >> b3;
+
+        int sum1 = a1 + a2 + a3;
+        int sum2 = b1 + b2 + b3;
+        int del = 0;
+
+        if (sum1 >= 150)
+        {
+            del += 0;
+        }
+        else{
+            del += d;
+        }
+        if (sum2 >= 150)
+        {
+            del += 0;
+        }
+        else{
+            del += d;
+        }
+        if ((del + c) < d * 2)
+        {
+            cout << "YES" << endl;
+        }
+        else
+        {
+            cout << "NO" << endl;
+        }
+    }
+    return 0;
+}
