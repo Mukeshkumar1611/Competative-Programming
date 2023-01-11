@@ -1,0 +1,92 @@
+// Truth and Dare
+
+#include <iostream>
+using namespace std;
+
+bool isPresent(int a, int arr[], int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] == a)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
+int main()
+{
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int n1;
+        cin >> n1;
+        int arr1[n1];
+        for (int i = 0; i < n1; i++)
+        {
+            cin >> arr1[i];
+        }
+
+        int n2;
+        cin >> n2;
+        int arr2[n2];
+        for (int i = 0; i < n2; i++)
+        {
+            cin >> arr2[i];
+        }
+
+        int n3;
+        cin >> n3;
+        int arr3[n3];
+        for (int i = 0; i < n3; i++)
+        {
+            cin >> arr3[i];
+        }
+
+        int n4;
+        cin >> n4;
+        int arr4[n4];
+        for (int i = 0; i < n4; i++)
+        {
+            cin >> arr4[i];
+        }
+
+        bool flag = true;
+
+        for (int i = 0; i < n3; i++)
+        {
+            if (isPresent(arr3[i], arr1, n1))
+            {
+                continue;
+            }
+            else
+            {
+                flag = false;
+            }
+        }
+
+        for (int i = 0; i < n4; i++)
+        {
+            if (isPresent(arr4[i], arr2, n2))
+            {
+                continue;
+            }
+            else
+            {
+                flag = false;
+            }
+        }
+        if (flag)
+        {
+            cout << "yes" << endl;
+        }
+        else
+        {
+            cout << "no" << endl;
+        }
+    }
+    return 0;
+}
